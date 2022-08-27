@@ -1,5 +1,6 @@
 package weeks.week_03;
 import java.util.*;
+
 public class Question_01 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
