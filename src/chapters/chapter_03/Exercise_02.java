@@ -1,3 +1,5 @@
+
+
 public class Exercise_02 {
  public static void main(String[] args) {
   int number1 = (int) (System.currentTimeMillis() % 10);
