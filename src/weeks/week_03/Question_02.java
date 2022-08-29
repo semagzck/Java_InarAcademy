@@ -29,7 +29,7 @@ public class Question_02 {
 			age3 = age2; // age3=25
 			age2 = temporaryAge; // age;20
 		}
-		System.out.println(" order of ages\r\n"
+		System.out.println(" order of ages" 
 				+ "" + age1+" " + age2+" " + age3);
 
 	}
