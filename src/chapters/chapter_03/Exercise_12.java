@@ -10,7 +10,6 @@ public class Exercise_12 {
 	  System.out.print("Enter a three-digit integer:");
 	  int number = input.nextInt();
 	 
-	  // Extracting digits
 	  int first = number / 100;
 	  int last = number % 10;
 	  if (last == first) {
