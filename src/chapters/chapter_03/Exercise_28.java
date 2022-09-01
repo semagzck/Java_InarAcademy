@@ -1,48 +1,47 @@
 package chapters.chapter_03;
 import java.util.Scanner;
 
-public class Exercise_25 {
+public class Exercise_28 {
 
-			Scanner input = new Scanner(System.in);
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter first rectangle center x-, y-coordinates, width, and height, respectively:");
+		double x1 = input.nextDouble();
+		double y1 = input.nextDouble();
+		double width_1 = input.nextDouble();
+		double height_1 = input.nextDouble();
+		
+		System.out.println("Enter second rectangle center x-, y-coordinates, width, and height, respectively:");
+		
+		
+		double x2 = input.nextDouble();
+		double y2 = input.nextDouble();
+		double width_2 = input.nextDouble();
+		double height_2 = input.nextDouble();
+		
+		
+		double w1 = width_1 /2;
+		double w2 = width_2 / 2;
+		double h1 = height_1 / 2;
+		double h2 = height_2 / 2;
+		if (x1 == x2 && y1 == y2 && w1 == w2 && h1 == h2) {
+			System.out.println("Two rectangle are the same.");
 			
-			System.out.println("Enter r1's center x-,  y-coordinates, width, and height: ");
-			double x1 = input.nextDouble();
-			double y1 = input.nextDouble();
-			double width = input.nextDouble();
-			double height = input.nextDouble();
-			
-			double rectangleRight = x1 + width / 2 ;
-			double rectangleLeft = x1 - width / 2 ;
-			double rectangleTop = y1 + height / 2 ;
-			double rectangleBottom = y1 - height / 2 ;
-			
-System.out.println( " Enter r2's center x-, y-coordinates, width, and height: ");
-			double x2 = input.nextDouble();
-			double y2 = input.nextDouble();
-			double width2 = input.nextDouble();
-			double height2 = input.nextDouble();
-			
-			double rectangleRight2 = x2 + width2 / 2 ;
-			double rectangleLeft2 = x2 - width2 / 2 ;
-			double rectangleTop2 = y2 + height2 / 2 ;
-			double rectangleBottom2 = y2 - height2 / 2 ;
-			
-			boolean isInside = rectangleRight >= rectangleRight2 && rectangleLeft <= rectangleLeft2 && 
-					rectangleTop >= rectangleTop2 && rectangleBottom <= rectangleBottom2 ;
-			
-			boolean isOutside = rectangleRight < rectangleLeft2 || rectangleLeft > rectangleRight2 || 
-					rectangleTop < rectangleBottom2 || rectangleBottom > rectangleTop2 ;
-			
-					
-			if(isInside)
-				System.out.println("r2 is inside r1");
-			else if(isOutside)
-				System.out.println("r2 does not overlap r1");
-			else 
-				System.out.println("r2 overlaps r1");
-			
-			
+		} else if (y2 + h2 < y1 - h1 || x2 + w2 < x1 - w1 || x2 - w2 > x1 + w1 || y2 - h2 > y1 + h1) {
+			System.out.println("The second rectangle is out of the first rectangle");
+		
+		} else if (y1 - h1 <= y2 - h2 && y1 + h1 >= y2 + h2 && x1 - w1 <= x2 - w2 && x1 + w1 >= x2 + w2) {
+			System.out.println("The second rectangle is inside the first rectangle");
+		
+		}else if (y2 - h2 <= y1 - h1 && y2 + h2 >= y1 + h1 && x2 - w2 <= x1 - w1 && x2 + w2 >= x1 + w1) {
+			System.out.println("The first rectangle is inside the second rectangle");
+		
+	
+		
+		} else {
+			System.out.println("Rectangles  are overlap");
 		}
-	​
+
 	}
+
 }

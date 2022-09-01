@@ -5,3 +5,5 @@ public class checkpoint_03 {
 	System.out.println(2 * 5 / 2 + 2 * 5 / 2);
 	System.out.println(2 * (5 / 2));
 	System.out.println(2 * 5 / 2);
+}
+}
