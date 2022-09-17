@@ -2,8 +2,6 @@ package Chapters.chapter_05;
 import java.util.Scanner;
 
 public class Exercise_43 {
-	public static void main(String[] args) {
-
 	int total = 0;
 	for(int i = 1; i <= 7; i++) {
 	for(int j = i + 1; j <= 7; j++) {
