@@ -12,4 +12,5 @@ public class Exercise_43 {
 	System.out.println("The total number of all combinations is " + total);
 	
 }
+
 }
