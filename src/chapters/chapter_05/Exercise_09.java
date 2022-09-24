@@ -54,7 +54,7 @@ public class Exercise_09 {
 			System.out.println("The bets two students are " + firstName +" and " + secondName);
 			System.out.print(firstName + "'s score of " + firstScore + "\n" 
 								+ secondName + "'s score of " + secondScore);
-			input.close();
+			
 
 		}
 
