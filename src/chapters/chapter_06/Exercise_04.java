@@ -2,7 +2,7 @@
 	package chapter_06;
 	import java.util.Scanner;
 
-	public class hoppala {
+	public class Exercise_04 {
 	    public static void main(String[] args) {
 	        Scanner input = new Scanner(System.in);
 	        System.out.print("Bir sayi giriniz: ");
