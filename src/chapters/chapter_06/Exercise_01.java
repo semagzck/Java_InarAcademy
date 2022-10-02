@@ -10,3 +10,8 @@ public class Exercise_01 {
 		}
 }
 
+public static int getPentagonalNumber(int n) {
+    int pentagonalNumber = n * (3 * n - 1) / 2;
+    return pentagonalNumber;
+}
+}
