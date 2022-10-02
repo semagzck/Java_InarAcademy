@@ -1,17 +1,25 @@
 package chapter_06;
 
-public class Exercise_03 {
-    Scanner in =new Scanner(System.in);
-	System.out.print("Enter digits: ");
-    iSnt digits = in.nextInt();
-		System.out.println("The sum is " + sumDigits(digits));
+import java.util.Scanner;
 
-		System.out.println(reverse(456));
-	   System.out.println("Is 456 a pal? " + isPalindrome(456));
-       System.out.println("Is 2002 a pal? " + isPalindrome(2002));
-		System.out.print("Enter a number to reverse (3456): ");
-		System.out.println(reverse(in.nextInt()));
+public class Exercise_02 {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter an integer: ");
+        int number = input.nextInt();
+        System.out.println("The sum of the digits of integer " + number + " is " + sumDigits(number));
+    }
+
+    public static int sumDigits(long n) {
+        int sumOfDigits = 0;
+        long remainingDigits = n;
+        while (remainingDigits != 0) {
+            sumOfDigits += remainingDigits % 10;
+            remainingDigits /= 10;
+        }
+        return sumOfDigits;
+    }
 }
-
 
 
