@@ -1,9 +1,7 @@
 package chapters;
 
-public class listing_02 {
+public class SimpeCircle {
     public static void main(String[] args) {
-       
-       
         SimpleCircle circle1 = new SimpleCircle();
         System.out.println("The area of the circle of radius " + circle1.radius + " is " +
                 circle1.getArea());
@@ -20,16 +18,14 @@ public class listing_02 {
         System.out.println("The area of the circle of radius " + circle2.radius + " is " +
                 circle2.getArea());
     }
-}
 
-class SimpleCircle {
     double radius;
 
-    SimpleCircle() {
+    void SimpleCircle() {
         radius = 1;
     }
 
-    SimpleCircle(double newRadius) {
+    void SimpleCircle(double newRadius) {
         radius = newRadius;
     }
 
@@ -38,13 +34,6 @@ class SimpleCircle {
     }
 
     double getPerimeter() {
-        return 2 * radius;
+        return radius * radius;
     }
-
-    void setRadius(double newRadius) {
-        radius = newRadius;
-    }
-
-
 }
-
