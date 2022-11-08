@@ -1,0 +1,10 @@
+  Integer i = new Integer("23");
+        Integer i = new Integer(23);
+        Integer i = Integer.valueOf("23");
+        Integer i = Integer.parseInt("23", 8);
+        Double d = new Double();
+        Double d = Double.valueOf("23.45");
+        int i = (Integer.valueOf("23")).intValue();
+        double d = (Double.valueOf("23.4")).doubleValue();
+        int i = (Double.valueOf("23.4")).intValue();
+        String s = (Double.valueOf("23.4")).toString();
